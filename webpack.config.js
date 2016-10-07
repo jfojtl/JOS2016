@@ -12,6 +12,7 @@ const HTMLWebpackPlugin = require('html-webpack-plugin');
 const exerslide = require('exerslide');
 const exerslideConfig = require('./exerslide.config');
 const path = require('path');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 const webpack = require('webpack');
 
 const PROD = process.env.NODE_ENV === 'production';
@@ -38,6 +39,7 @@ const plugins = [
       return a.names[0].localeCompare(b.names[0]);
     },
   }),
+  new CopyWebpackPlugin([{ from: './assets' }]),
 ];
 
 if (PROD) {
