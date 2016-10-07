@@ -1,0 +1,1 @@
+Built using [exerslide](https://facebookincubator.github.io/exerslide/). Presented at [jOpenSpace 2016](http://www.jopenspace.cz/). Prez available on [https://jfojtl.github.io/JOS2016/](https://jfojtl.github.io/JOS2016/).
